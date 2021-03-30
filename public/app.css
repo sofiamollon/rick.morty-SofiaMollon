@@ -1,0 +1,38 @@
+h1 {
+    background-color: rgb(186, 236, 236);
+    height:45px;
+    padding-top: 1%;
+}
+
+h2.nombre {
+    background-color: rgb(186, 236, 236);
+    height:45px;
+    padding-top: 1%;
+}
+
+h2.titulo{
+    text-decoration: underline;
+}
+
+h3{
+    font-weight: normal;
+}
+
+div.contenedor{
+    float:left;
+    width:30%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border: solid 1px;
+    margin-right: 1.5%;
+    margin-left: 1.5%
+}
+
+div.general{
+    overflow: hidden;
+    width: 100%;
+}
+
+*{
+    text-align: center;
+}
