@@ -33,6 +33,35 @@ div.general{
     width: 100%;
 }
 
+button.color{
+    background-color: thistle;
+}
+
+button.borrar{
+    background-color: tan;
+}
+
+button{
+    margin-bottom: 3%;
+    border: solid 1px;
+    font-size: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+button.reset{
+    border: solid 2px;
+    font-size: 19px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 21%;
+    padding-left: 21%;
+    background-color: silver;
+}
+
+
 *{
     text-align: center;
 }
