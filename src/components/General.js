@@ -12,14 +12,9 @@ export default class General extends Component{
         if (this.state.color !== "coral"){
             this.setState({color: colorNuevo})
         }
-        else{}
+        else{ }
             
     }
-
-    borrar = ()=>{
-        this.props.borrarOk(this.props.id)
-    }
-
 
     render(){
         return(
@@ -30,7 +25,7 @@ export default class General extends Component{
                 <h3> Origin: {this.props.datosRM.origin.name} </h3>
                 <br/>
                 <button className="color" onClick={() => this.cambiarColor("coral")}> Cambiar Color </button> <br/>
-                <button className="borrar" onClick={() => this.borrar()}> Borrar </button>
+                <button className="borrar" onClick={() => this.props.borrarOk(this.props.datosRM.id)}> Borrar </button>
             </div>            
         )
     }
