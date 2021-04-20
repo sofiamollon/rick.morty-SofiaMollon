@@ -27,7 +27,7 @@ export default class App extends Component {
   }
   
   componentDidMount(){
-    fetch("https://rickandmortyapi.com/api/character/?page=1")
+    fetch("https://rickandmortyapi.com/api/character")
     .then(resource => resource.json())
     .then(data => {
       this.setState({arrayOk: data.results});
@@ -39,7 +39,7 @@ export default class App extends Component {
   }
 
   agregar(){
-    fetch("https://rickandmortyapi.com/api/character")
+    fetch("https://rickandmortyapi.com/api/character/?page=2")
     .then(resource => resource.json())
     .then(data => {
       this.state.arrayOk.push(data.results[0]);
@@ -56,8 +56,6 @@ export default class App extends Component {
       <div className="App">
         <Header/>
         <button className="reset" onClick={this.reset.bind(this)}> Reset all </button>
-        
-        <button className="agregar" onClick={() => this.agregar()}> More cards </button>
 
         <div className="general">
           {this.state.arrayOk.map((datos)=> {         
@@ -65,6 +63,8 @@ export default class App extends Component {
             
           })}
         </div>
+
+        <button className="agregar" onClick={() => this.agregar()}> More cards </button>
 
         <Footer/>
       </div>

@@ -60,6 +60,15 @@ button.reset{
     padding-left: 21%;
     background-color: silver;
 }
+button.agregar{
+    border: solid 2px;
+    font-size: 19px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 21%;
+    padding-left: 21%;
+    background-color: silver;
+}
 
 
 *{
